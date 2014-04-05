@@ -1,0 +1,11 @@
+{
+  "name": "sheet-music-creator",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "latest",
+    "angular-route": "latest",
+    "bootstrap": "latest",
+    "jQuery": "latest",
+    "paper": "latest"
+  }
+}

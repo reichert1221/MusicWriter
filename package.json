@@ -1,0 +1,26 @@
+{
+  "name": "sheet-music-creator",
+  "author": "David Reichert <wildcat1221@gmail.com",
+  "version": "0.0.1",
+  "description": "An online, in browser tool to write sheet music anc compose songs",
+  "main": "server.js",
+  "engines": {
+    "node": "0.10.26",
+    "npm": "1.4.3"
+  },
+  "dependencies":
+    {
+      "bower": "1.2.8",
+      "express": "4",
+      "body-parser": "~1.0.0",
+      "morgan": "~1.0.0",
+      "method-override": "~1.0.0",
+      "consolidate": "~0.10.0",
+      "grunt-cli": "~0.1.11",
+      "grunt-concurrent": "~0.4.2",
+      "grunt-nodemon": "0.2.0",
+      "grunt-contrib-watch": "~0.5.3",
+      "grunt-contrib-jshint": "~0.8.0",
+      "mongoose": "~3.8.3"
+    }
+}
