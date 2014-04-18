@@ -112,7 +112,20 @@ for (var i = 0; i <= 11; i++) {
   drawMeasure(measureCount, measureIterator, lineCount);
 }
 
+function drawClef() {
+  var clef = new Path();
+  clef.importSVG("/svg/TrebleClef.svg");
+
+  var symClef = new Symbol(clef);
+
+  //clef.remove();
+
+  var placedClef = new PlacedSymbol(symClef);
+    var clefPoj = new Project();
+  }
+
 s = 40;
+/*
 drawQuarter(s, 212);
 drawQuarter(s + 75, 212);
 drawQuarter(s + 75*2, 212);
@@ -125,3 +138,6 @@ drawEighth(s+73.5*7, 212);
 
 drawHalfNote(s+82*8, 212);
 drawHalfNote(s+87*9, 212);
+*/
+
+drawClef();

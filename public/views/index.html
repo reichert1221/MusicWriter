@@ -11,16 +11,20 @@
 
     <!-- JS -->
     <script type="text/javascript" src="/libs/jQuery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="/libs/paper/dist/paper-full.min.js"></script>
+    <!-- <script type="text/javascript" src="/libs/paper/dist/paper-full.min.js"></script> -->
+    <script type="text/javascript" src="/libs/snap.svg/dist/snap.svg-min.js"></script>
 
     <!-- Angular Files -->
     <!-- Paperscript Files -->
-    <script type="text/paperscript" canvas="paperCanvas" src="/JS/logic.js"></script>
+    <!-- <script type="text/paperscript" canvas="paperCanvas" src="/JS/logic.js"></script> -->
+    <!-- Snap.svg Files -->
+    <script type="text/javascript" src="JS/svg.js"></script>
   </head>
 
   <body>
     <h1>Index page loaded</h1>
 
-    <canvas id="paperCanvas" width="1250" height="750" style="background-color: rgb(231, 231, 231); margin-left: 15px;">Your browser does not support this.</canvas>
-  </body>
+    <!-- <canvas id="paperCanvas" width="1250" height="750" style="background-color: rgb(231, 231, 231); margin-left: 15px;">Your browser does not support this.</canvas> -->
+    <svg height="700" width="1250" id="svg" style="border:1px solid black; margin-left: 10px;"></svg>
+    </body>
 </html>

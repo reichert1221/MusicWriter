@@ -1,8 +1,15 @@
 {
   "name": "sheet-music-creator",
-  "author": "David Reichert <wildcat1221@gmail.com",
-  "version": "0.0.1",
-  "description": "An online, in browser tool to write sheet music anc compose songs",
+  "author": "David Reichert <wildcat1221@gmail.com>",
+  "contributors": {
+    "name": "Isaac Schrock"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reichert1221/MusicWriter.git"
+  },
+  "version": "0.2.0",
+  "description": "An online, in browser tool to write sheet music and compose songs",
   "main": "server.js",
   "engines": {
     "node": "0.10.26",

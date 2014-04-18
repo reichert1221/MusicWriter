@@ -6,6 +6,6 @@
     "angular-route": "latest",
     "bootstrap": "latest",
     "jQuery": "latest",
-    "paper": "latest"
+    "snap.svg": "latest"
   }
 }
