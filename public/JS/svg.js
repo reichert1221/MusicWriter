@@ -91,8 +91,6 @@ window.onload = function () {
   }
 
   function endStave() {
-    console.log("End Stave");
-
     var bigBar = paper.line(20 + (300 * (measureCount + 1)), (148.75 * line) -50, 20 + (300 * (measureCount + 1)), (148.75 * line) + 16);
     bigBar.attr({
       stroke: "#000",
@@ -145,11 +143,17 @@ window.onload = function () {
 
 /******** Draw Notes ********/
 
-function drawWholeNote(){}
+function drawWholeNote(){
+  var wholeNote = paper.image("/svg/WholeNote.svg", 300, 86.5, 110.5, 76);
+}
 
-function drawHalfNote() {}
+function drawHalfNote() {
+  var halfNote = paper.image("/svg/HalfNote.svg", 600, 95.5, 55, 85);
+}
 
-function drawQuaterNote() {}
+function drawQuaterNote() {
+  var quaterNote = paper.image("/svg/QuaterNote.svg", 900, 95.5, 55, 85);
+}
 
 function drawEightNotes() {}
 
@@ -158,9 +162,21 @@ function drawEightNote() {}
 
 /******** Draw Rests ********/
 
-function drawWholeRest() {}
+function drawWholeRest() {
+  var wholeRest = paper.rect(165, 266, 20, 5);
+  wholeRest.attr({
+    stroke: "#000",
+    fill: "#000"
+  });
+}
 
-function drawHalfRest() {}
+function drawHalfRest() {
+  var halfRest = paper.rect(465, 276, 20, 5);
+  halfRest.attr({
+    stroke: "#000",
+    fill: "#000"
+  });
+}
 
 function drawQuarterRest() {}
 
@@ -169,9 +185,13 @@ function drawEightRest() {}
 
 /******** Draw Annotations ********/
 
-function drawSharp() {}
+function drawSharp() {
+  var sharp = paper.image("/svg/sharp.svg", 303, 95, 55, 60);
+}
 
 function drawFlat() {}
+
+function drawNatural() {}
 
 function drawDot() {}
 
@@ -200,6 +220,13 @@ function drawPianos() {}
 
 /*** Test Portion ***/
   startStave();
+
+  drawWholeNote();
+  drawHalfNote();
+  drawQuaterNote();
+  drawWholeRest();
+  drawHalfRest();
+  drawSharp();
 
   for (var i = 0; i < 22; i++) {
     addMeasure();
