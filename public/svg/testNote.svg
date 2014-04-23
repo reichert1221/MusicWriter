@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="744.09448"
+   height="1052.3622"
+   id="svg2"
+   style="enable-background:new"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="testNote.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="752"
+     id="namedview3031"
+     showgrid="false"
+     inkscape:zoom="0.51"
+     inkscape:cx="372.04724"
+     inkscape:cy="526.18109"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs4">
+    <inkscape:path-effect
+       effect="bend_path"
+       id="path-effect3874" />
+    <filter
+       color-interpolation-filters="sRGB"
+       id="filter3827">
+      <feFlood
+         result="result1"
+         flood-color="rgb(255,0,105)"
+         id="feFlood3829" />
+      <feComposite
+         in2="SourceGraphic"
+         operator="in"
+         result="result2"
+         id="feComposite3831" />
+    </filter>
+    <filter
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB"
+       id="filter3837">
+      <feColorMatrix
+         result="fbSourceGraphic"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="SourceGraphic"
+         id="feColorMatrix3839" />
+      <feColorMatrix
+         in="fbSourceGraphic"
+         type="luminanceToAlpha"
+         result="result14"
+         id="feColorMatrix3841" />
+      <feComposite
+         in2="result14"
+         operator="out"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic"
+         id="feComposite3843" />
+      <feBlend
+         in2="fbSourceGraphic"
+         mode="normal"
+         result="result15"
+         id="feBlend3845" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     transform="matrix(-1,0,0,1,744.81635,0)">
+    <path
+       d="M 421.19088,426.92126 C 405.31066,418.84704 388.19105,412.54453 370.38642,408.51328 288.99381,390.0847 223.89655,426.4252 225.01907,489.68996 l 0.0721,1.57981 c 2.22118,62.89505 68.75619,128.07403 149.35754,146.32345 C 455.8413,656.02179 520.89652,619.69496 519.774,556.4302 518.89703,507.00459 477.90588,455.75791 421.19088,426.92126 z m -22.5601,11.65516 c 8.79396,4.47148 17.25488,10.74291 25.00215,18.80239 35.41612,36.84336 42.25632,97.29086 15.26021,135.00845 -26.99611,37.7176 -77.57612,38.41786 -112.99224,1.5745 -35.07181,-36.4852 -42.17252,-96.19941 -15.92422,-134.04908 l 0.66402,-0.95938 c 21.09072,-29.46687 56.58278,-36.34588 87.99008,-20.37688 z"
+       id="path3967"
+       style="fill:#000000;fill-rule:nonzero"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

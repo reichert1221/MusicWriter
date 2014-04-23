@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="744.09448"
+   height="1052.3622"
+   id="svg2">
+  <defs
+     id="defs4">
+    <inkscape:path-effect
+       effect="bend_path"
+       id="path-effect3874" />
+    <filter
+       color-interpolation-filters="sRGB"
+       id="filter3827">
+      <feFlood
+         result="result1"
+         flood-color="rgb(255,0,105)"
+         id="feFlood3829" />
+      <feComposite
+         in2="SourceGraphic"
+         operator="in"
+         result="result2"
+         id="feComposite3831" />
+    </filter>
+    <filter
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB"
+       id="filter3837">
+      <feColorMatrix
+         result="fbSourceGraphic"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="SourceGraphic"
+         id="feColorMatrix3839" />
+      <feColorMatrix
+         in="fbSourceGraphic"
+         type="luminanceToAlpha"
+         result="result14"
+         id="feColorMatrix3841" />
+      <feComposite
+         in2="result14"
+         operator="out"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic"
+         id="feComposite3843" />
+      <feBlend
+         in2="fbSourceGraphic"
+         mode="normal"
+         result="result15"
+         id="feBlend3845" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <path
+       d="m 411.71875,54 0,652.78125 c -25.09004,-27.4912 -71.93481,-38.40433 -127.0625,-22.625 -31.80104,9.10249 -41.12451,14.88292 -63.96875,28.28125 -37.79299,22.16588 -83.21678,65.60564 -84.09375,115.03125 -1.12252,63.26476 63.91991,99.58482 145.3125,81.15625 80.60135,-18.24942 147.15382,-83.41745 149.375,-146.3125 l 0.0625,-1.59375 c 0.0404,-2.278 -0.0289,-4.51005 -0.15625,-6.71875 l 0.0625,0 0,-577.1875 c 25.95996,30.51223 73.66812,35.51958 99.75,49.96875 7.43606,3.99008 34.80526,24.37297 37.625,54.90625 7.89879,61.37084 1.67667,96.42846 0.15625,105.5625 -8.57154,51.49404 -17.98361,76.84325 -36.65625,125.40625 -37.64302,97.90032 -37.59375,101.03125 -37.59375,101.03125 l 0.71875,1.4375 c 0,0 3.55519,-16.47552 43.125,-111.96875 20.08321,-48.46649 32.35484,-85.03285 38.375,-135.03125 6.02016,-49.9984 -1.72526,-101.50393 -22.75,-149 -1.64111,-4.31863 -2.5002,-4.92258 -8.125,-11.625 C 520.2557,179.69286 489.73367,178.05137 431.25,54.0625 l 0,-0.0625 -0.0312,0 -19.5,0 z"
+       id="path3348"
+       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;stroke:none;stroke-width:8;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" />
+  </g>
+</svg>
