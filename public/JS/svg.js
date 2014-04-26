@@ -143,19 +143,11 @@ window.onload = function () {
 
 /******** Draw Notes ********/
 
-function drawWholeNote(x, y){
-  var wholeNote = paper.image("/svg/WholeNote.svg", x, y, 110.5, 76);
-}
-
 function WholeNote(x, y){
   this.x = x; // 420
   this.y = y; // 86.5
 
   var wholeNote = paper.image("/svg/WholeNote.svg", this.x, this.y, 110.5, 76);
-}
-
-function drawHalfNote() {
-  var halfNote = paper.image("/svg/HalfNote.svg", 720, 94, 55, 82);
 }
 
 function HalfNote(x, y) {
@@ -165,25 +157,11 @@ function HalfNote(x, y) {
   var halfNote = paper.image("/svg/HalfNote.svg", this.x, this.y, 55, 82);
 }
 
-function drawQuaterNote() {
-  var quaterNote = paper.image("/svg/QuaterNote.svg", 960, 95.5, 55, 85);
-}
-
 function QuaterNote(x, y) {
   this.x = x;
   this.y = y;
 
   var quaterNote = paper.image("/svg/QuaterNote.svg", this.x, this.y, 55, 85);
-}
-
-function drawEighthNotes() {
-  var partOne = paper.image("/svg/QuaterNote.svg", 1050, 95.5, 55, 85);
-  var partTwo = paper.image("/svg/QuaterNote.svg", 1090, 95.5, 55, 85);
-  var beam = paper.line(1087, 102, 1128.5, 102);
-  beam.attr({
-    stroke: "#000",
-    strokeWidth: 5
-  });
 }
 
 function EighthNotes(x, y) {
@@ -199,10 +177,6 @@ function EighthNotes(x, y) {
   });
 }
 
-function drawEighthNote() {
-  var eighthNote = paper.image("/svg/eighthNote.svg", 960, 94, 55, 85);
-}
-
 function EighthNote(x, y) {
   this.x = x;
   this.y = y;
@@ -213,28 +187,12 @@ function EighthNote(x, y) {
 
 /******** Draw Rests ********/
 
-function drawWholeRest() {
-  var wholeRest = paper.rect(165, 266, 20, 5);
-  wholeRest.attr({
-    stroke: "#000",
-    fill: "#000"
-  });
-}
-
 function WholeRest(x, y) {
   this.x = x;
   this.y = y;
 
   var wholeRest = paper.rect(this.x, this.y, 20, 5);
   wholeRest.attr({
-    stroke: "#000",
-    fill: "#000"
-  });
-}
-
-function drawHalfRest() {
-  var halfRest = paper.rect(465, 276, 20, 5);
-  halfRest.attr({
     stroke: "#000",
     fill: "#000"
   });
@@ -251,27 +209,45 @@ function HalfRest(x, y) {
   });
 }
 
-function drawQuarterRest() {}
+function QuarterRest(x, y) {
+  this.x = x;
+  this.y = y;
 
-function drawEighthRest() {}
+  var quarterRest = paper.image("/svg/QuarterRest.svg", this.x, this.y, 55, 110);
+}
+
+function EighthRest(x, y) {
+  this.x = x;
+  this.y = y;
+
+  var eighthRest = paper.image("/svg/EighthRest.svg", this.x, this.y, 80, 150);
+}
 
 
 /******** Draw Annotations ********/
 
-function drawSharp() {
-  var sharp = paper.image("/svg/sharp.svg", 418, 95, 55, 60);
+function Sharp(x, y) {
+  this.x = x;
+  this.y = y;
+  var sharp = paper.image("/svg/sharp.svg", this.x, this.y, 55, 60);
 }
 
-function drawFlat() {
-  var flat = paper.image("/svg/flat.svg", 423, 76, 55, 60);
+function Flat(x, y) {
+  this.x = x;
+  this.y = y;
+  var flat = paper.image("/svg/flat.svg", this.x, this.y, 55, 60);
 }
 
-function drawNatural() {
-  var natural = paper.image("/svg/natural.svg", 423, 95, 55, 60);
+function Natural(x, y) {
+  this.x = x;
+  this.y = y;
+  var natural = paper.image("/svg/natural.svg", this.x, this.y, 55, 60);
 }
 
-function drawDot() {
-  var dot = paper.circle(493, 125, 2.5);
+function Dot(x, y) {
+  this.x = x;
+  this.y = y;
+  var dot = paper.circle(this.x, this.y, 2.5);
   dot.attr({
     fill: "#000"
   });
@@ -306,17 +282,23 @@ function drawPianos() {}
 
   var wholeNote = new WholeNote(420, 86.5);
 
-  var halfNote = new HalfNote(720, 94);
+  var halfNote = new HalfNote(720, 95);
 
   var eighthNote = new EighthNote(960, 94);
 
   var wholeRest = new WholeRest(165, 266);
 
   var halfRest = new HalfRest(465, 276);
-  drawNatural();
-  drawDot();
+
+  var natural = new Natural(423, 95);
+
+  var dot = new Dot(495, 125);
 
   var eighthNotes = new EighthNotes(1050, 95.5);
+
+  var quarterRest = new QuarterRest(740, 225);
+
+  var eighthRest = new EighthRest(1040, 210);
 
   for (var i = 0; i < 22; i++) {
     addMeasure();
