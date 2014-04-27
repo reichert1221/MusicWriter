@@ -104,6 +104,18 @@
     });
   }
 
+  function drawStave() {
+    var controls = new ControlBar();
+
+    startStave();
+
+    for (var i = 0; i < 22; i++) {
+      addMeasure();
+    }
+
+    endStave();
+  }
+
   function newLineStave() {
     var x = 20, y = 148.75 * line, factor = 16.25, lineY;
 
@@ -157,7 +169,7 @@ function HalfNote(x, y) {
   var halfNote = paper.image("/svg/HalfNote.svg", this.x, this.y, 20, 65);
 }
 
-function QuaterNote(x, y) {
+function QuarterNote(x, y) {
   this.x = x;
   this.y = y;
 
@@ -283,8 +295,8 @@ function ControlBar() {
   var eNote = paper.image("/svg/EighthNote.svg", 550, 10, 15, 30);
   var eNotes = paper.image("/svg/EighthNotes.svg", 600, 5, 25, 45);
 
-  var wRest = new WholeRest(650, 20);
-  var hRest = new HalfRest(700, 25);
+  var wRest = new WholeRest(650, 25);
+  var hRest = new HalfRest(700, 20);
   var qRest = paper.image("/svg/QuarterRest.svg", 750, 10, 10, 30);
   var eRest = paper.image("svg/EighthRest.svg", 800, 10, 10, 30);
 }

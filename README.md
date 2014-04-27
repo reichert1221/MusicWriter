@@ -17,19 +17,18 @@ The Following are currently implemented into the API
 - Accidentals (sharps, flats, naturals)
 - Dotted notes (accidentals and dotted notes are supported, but are not currently linkable to notes)
 - Creating the stave (22 measures)
---Double bar at the end
+- - Double bar at the end
 - The Control Bar
--- Ability to select a note/rest to use with sliding indicator bar
---NOTE: notes and rests cannot yet be added to the stave without being hard coded
+- - Ability to select a note/rest to use with sliding indicator bar
+-Click to insert notes/rests
 
 ## Coming Soon
-- Click to insert notes/rests
 - Slurs and ties
 - Dynamics
 - Tempos
 - Accents
 - Time Signatures
--- Beat tracking
+- - Beat tracking
 - Bass and other Clefs
 
 
