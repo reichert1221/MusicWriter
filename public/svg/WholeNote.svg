@@ -7,17 +7,45 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="744.09448"
-   height="1052.3622"
+   width="310.5"
+   height="216"
    id="svg2"
-   style="enable-background:new">
+   style="enable-background:new"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="WholeNote.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="752"
+     id="namedview3412"
+     showgrid="false"
+     inkscape:zoom="2.36"
+     inkscape:cx="151.70826"
+     inkscape:cy="171.40979"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
   <defs
      id="defs4">
     <inkscape:path-effect
        effect="bend_path"
-       id="path-effect3874" />
+       id="path-effect3874"
+       is_visible="true"
+       bendpath="M 0,0 1,0"
+       prop_scale="1"
+       scale_y_rel="false"
+       vertical="false" />
     <filter
        color-interpolation-filters="sRGB"
        id="filter3827">
@@ -69,15 +97,17 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     id="layer1">
+     id="layer1"
+     transform="translate(-216.02369,-415.07451)">
     <path
        d="m 372.25,415.25 c -17.815,0.013 -35.93023,2.16725 -53.625,6.65625 -80.89037,20.52115 -122.40213,82.44899 -92.6875,138.3125 l 0.78125,1.375 c 30.5258,55.03541 119.39601,82.91541 199.5,62.59375 C 507.10912,603.66635 548.58963,541.76976 518.875,485.90625 495.66044,442.26288 435.87501,415.2037 372.25,415.25 z m -14.8125,20.625 c 9.86549,-0.007 20.25117,1.74103 30.8125,5.40625 48.28039,16.75527 81.81115,67.51329 74.875,113.375 -6.93615,45.86171 -51.68836,69.44277 -99.96875,52.6875 C 315.34522,590.75136 281.91516,540.76499 288.125,495.125 l 0.15625,-1.15625 c 5.41887,-35.82946 33.92236,-58.06813 69.15625,-58.09375 z"
        id="path3967"
-       style="fill:#000000;fill-rule:nonzero" />
+       style="fill:#000000;fill-rule:nonzero"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

@@ -8,7 +8,7 @@
     "type": "git",
     "url": "https://github.com/reichert1221/MusicWriter.git"
   },
-  "version": "0.2.0",
+  "version": "0.5.0",
   "description": "An online, in browser tool to write sheet music and compose songs",
   "main": "server.js",
   "engines": {

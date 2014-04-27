@@ -1,4 +1,4 @@
-window.onload = function () {
+//window.onload = function () {
   var paper = Snap("#svg");
 
   var line = 1, measure = 1, measureCount = 0;
@@ -147,30 +147,30 @@ function WholeNote(x, y){
   this.x = x; // 420
   this.y = y; // 86.5
 
-  var wholeNote = paper.image("/svg/WholeNote.svg", this.x, this.y, 110.5, 76);
+  var wholeNote = paper.image("/svg/WholeNote.svg", this.x, this.y, 23, 23);
 }
 
 function HalfNote(x, y) {
   this.x = x;
   this.y = y;
 
-  var halfNote = paper.image("/svg/HalfNote.svg", this.x, this.y, 55, 82);
+  var halfNote = paper.image("/svg/HalfNote.svg", this.x, this.y, 20, 65);
 }
 
 function QuaterNote(x, y) {
   this.x = x;
   this.y = y;
 
-  var quaterNote = paper.image("/svg/QuaterNote.svg", this.x, this.y, 55, 85);
+  var quaterNote = paper.image("/svg/QuaterNote.svg", this.x, this.y, 20, 65);
 }
 
 function EighthNotes(x, y) {
   this.x = x;
   this.y = y;
 
-  var partOne = paper.image("/svg/QuaterNote.svg", this.x, this.y, 55, 85);
-  var partTwo = paper.image("/svg/QuaterNote.svg", this.x + 40, this.y, 55, 85);
-  var beam = paper.line(this.x + 37, this.y + 6.5, this.x + 78.5, this.y + 6.5);
+  var partOne = paper.image("/svg/QuaterNote.svg", this.x, this.y, 20, 65);
+  var partTwo = paper.image("/svg/QuaterNote.svg", this.x + 40, this.y, 20, 65);
+  var beam = paper.line(this.x + 19, this.y + 6.5, this.x + 60, this.y + 6.5);
   beam.attr({
     stroke: "#000",
     strokeWidth: 5
@@ -181,7 +181,7 @@ function EighthNote(x, y) {
   this.x = x;
   this.y = y;
 
-  var eighthNote = paper.image("/svg/eighthNote.svg", this.x, this.y, 55, 85);
+  var eighthNote = paper.image("/svg/eighthNote.svg", this.x, this.y, 30, 100);
 }
 
 
@@ -213,14 +213,14 @@ function QuarterRest(x, y) {
   this.x = x;
   this.y = y;
 
-  var quarterRest = paper.image("/svg/QuarterRest.svg", this.x, this.y, 55, 110);
+  var quarterRest = paper.image("/svg/QuarterRest.svg", this.x, this.y, 20, 50);
 }
 
 function EighthRest(x, y) {
   this.x = x;
   this.y = y;
 
-  var eighthRest = paper.image("/svg/EighthRest.svg", this.x, this.y, 80, 150);
+  var eighthRest = paper.image("/svg/EighthRest.svg", this.x, this.y, 20, 50);
 }
 
 
@@ -229,7 +229,7 @@ function EighthRest(x, y) {
 function Sharp(x, y) {
   this.x = x;
   this.y = y;
-  var sharp = paper.image("/svg/sharp.svg", this.x, this.y, 55, 60);
+  var sharp = paper.image("/svg/sharp.svg", this.x, this.y, 20, 50);
 }
 
 function Flat(x, y) {
@@ -241,7 +241,7 @@ function Flat(x, y) {
 function Natural(x, y) {
   this.x = x;
   this.y = y;
-  var natural = paper.image("/svg/natural.svg", this.x, this.y, 55, 60);
+  var natural = paper.image("/svg/natural.svg", this.x, this.y, 20, 30);
 }
 
 function Dot(x, y) {
@@ -269,42 +269,25 @@ function drawMP() {}
 
 function drawPianos() {}
 
+/******** Controls ********/
 
-/******** Logic Portion ********
-  * Track Beats per measure
-  * Track Measures
-  * Track notes, rests, etc for saving in JSON
-  * Draw Notes in mass by storing in array
-*********                      *******/
+function ControlBar() {
+  var divider = paper.line(10, 50, 1240, 50);
+  divider.attr({
+    stroke: "#000"
+  });
 
-/*** Test Portion ***/
-  startStave();
+  var wNote = paper.image("svg/WholeNote.svg", 400, 10, 10, 30);
+  var hNote = paper.image("svg/HalfNote.svg", 450, 10, 10, 30);
+  var qNote = paper.image("/svg/QuaterNote.svg", 500, 10, 10, 30);
+  var eNote = paper.image("/svg/EighthNote.svg", 550, 10, 15, 30);
+  var eNotes = paper.image("/svg/EighthNotes.svg", 600, 5, 25, 45);
 
-  var wholeNote = new WholeNote(420, 86.5);
-
-  var halfNote = new HalfNote(720, 95);
-
-  var eighthNote = new EighthNote(960, 94);
-
-  var wholeRest = new WholeRest(165, 266);
-
-  var halfRest = new HalfRest(465, 276);
-
-  var natural = new Natural(423, 95);
-
-  var dot = new Dot(495, 125);
-
-  var eighthNotes = new EighthNotes(1050, 95.5);
-
-  var quarterRest = new QuarterRest(740, 225);
-
-  var eighthRest = new EighthRest(1040, 210);
-
-  for (var i = 0; i < 22; i++) {
-    addMeasure();
-  }
-
-  endStave();
+  var wRest = new WholeRest(650, 20);
+  var hRest = new HalfRest(700, 25);
+  var qRest = paper.image("/svg/QuarterRest.svg", 750, 10, 10, 30);
+  var eRest = paper.image("svg/EighthRest.svg", 800, 10, 10, 30);
+}
 
 
-};
+//};
